@@ -1,0 +1,268 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #aba37f;
+}
+
+body {
+  margin: 0px;
+  background: white;
+  font-family: 'Arial', 'Quicksand', sans-serif;
+  font-size: 1.0rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+}
+
+body {
+  padding: 0px 10%;
+  margin: 0px auto;
+}
+
+h1 {
+  margin: 20px;
+  font-family: 'Copperplate';
+  text-align: center;
+  font-size: 3em;
+  color: #755813;
+  line-height: 1em;
+}
+
+h2 {
+  font-family: 'Century Gothic', 'Merriweather', serif;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+nav ul {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: #EEE5D4;
+  box-shadow: 0 0 2px black;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  width: 100px;
+  margin: 0px 10px;
+  color: #617088;
+  font-weight: 600;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ebda88;
+  background-image: linear-gradient(62deg, #dbd4b2 0%, #ebda88 100%);
+}
+
+main {
+  padding-top: 100px;
+}
+
+#welcome-img {
+  display: block;
+  width: 70%;
+  margin: auto;
+  opacity: 0.5;
+}
+
+footer {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+h3 {
+  flex: none;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 1.5em;
+  font-family: 'Merriweather', serif;
+}
+
+h4{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #dbd4b2;
+}
+
+.project-tile {
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project-img {
+  border: 8px double #EEE5D4;
+  padding: 5px;
+  display: block;
+  width: 180px;
+  height: 200px
+  margin-bottom: -5px;
+}
+
+.project-description {
+  background: #EEE5D4;
+  padding: 10px 10px;
+  height: 120px;
+}
+
+.project-title {
+  word-wrap: break-word;
+  max-width: 180px;
+  margin: 0px 0px 5px 0px;
+  font-family: 'Merriweather', serif;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+  color: #7b92b5;
+  font-weight: 600;
+}
+
+#contact-buttons {
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#contact p {
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #dbd4b2;
+}
+
+button {
+  padding: 10px;
+  width: 120px;
+  margin: 30px 10px;
+  background-color: #8B7955;
+  border: none;
+  color: white;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+button:hover {
+  background-color: #2274F4;
+}
+
+.category {
+  padding-top: 10px;
+  font-size: 0.8em;
+  border-top: 1px solid #5A370D;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer p {
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 0.8em;
+  }
+  
+  #welcome-img {
+    width: 95%;
+  }
+  
+}
+
+@media only screen and (max-width: 620px){
+  
+  h1 {
+    font-size: 2.3em;
+  }
+  
+  h2 {
+    font-size: 0.9em;
+  }
+  
+  #welcome-img {
+    width: 75%;
+  }
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 50vh;
+  padding: 0 2rem;
+  background: var(--main-gray);
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
